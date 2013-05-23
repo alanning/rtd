@@ -8,16 +8,20 @@ files = [
 
     // stubs come first so they can be available when all the units need them
     'test/rtd/lib/*-stubs.js',
-
-    // the reason we load unit tests next is because they don't depend on the app. On the contrary,
-    // they set mocks ahead of time for the units so they have to be loaded first
-    'test/unit/**/*.js',
+    'test/unit/stubs/*.js',
 
     // simulate loading order of meteor folder structure
     'app/lib/**/*.js',
+    'app/server/lib/**/*.js',
+    'app/client/lib/**/*.js',
 
     // now all the dependencies have been sorted, the app code can be loaded
-    'app/**/*.js'
+    'app/**/*.js',
+
+
+    // the reason we load unit tests next is because they don't depend on the app. On the contrary,
+    // they set mocks ahead of time for the units so they have to be loaded first
+    'test/unit/**/*.js'
 ];
 
 

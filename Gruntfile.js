@@ -144,7 +144,9 @@
                     '<%= basePath %>/app/**/*',
                     '!<%= basePath %>/app/.meteor/**/*'
                 ],
-                tasks: ['bgShell:touchUnitTests', 'bgShell:synchronizeMirrorApp', 'bgShell:instrumentCode', 'bgShell:runTests', 'postLatestUnitCoverage', 'bgShell:killReports', 'bgShell:runCoverageCheck']
+                tasks: ['bgShell:touchUnitTests', 'bgShell:synchronizeMirrorApp', 'bgShell:instrumentCode', 'bgShell:runTests'
+                //, 'postLatestUnitCoverage', 'bgShell:killReports', 'bgShell:runCoverageCheck'
+                ]
             },
             bgShell: {
                 _defaults: {
