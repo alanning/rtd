@@ -18,9 +18,6 @@ files = [
     // now all the dependencies have been sorted, the app code can be loaded
     'app/**/*.js',
 
-
-    // the reason we load unit tests next is because they don't depend on the app. On the contrary,
-    // they set mocks ahead of time for the units so they have to be loaded first
     'test/unit/**/*.js'
 ];
 
